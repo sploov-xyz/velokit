@@ -1,0 +1,43 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="300" fill="#050505"/>
+  
+  <defs>
+    <linearGradient id="support_grad" x1="0" y1="0" x2="1200" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00FFFF"/>
+      <stop offset="0.5" stop-color="#8000FF"/>
+      <stop offset="1" stop-color="#FF00FF"/>
+    </linearGradient>
+    
+    <filter id="neon" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <pattern id="dots" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="white" fill-opacity="0.05"/>
+    </pattern>
+  </defs>
+
+  <!-- Background Pattern -->
+  <rect width="1200" height="300" fill="url(#dots)"/>
+
+  <!-- Left Accent -->
+  <path d="M0 0L150 0L0 150V0Z" fill="url(#support_grad)" fill-opacity="0.1"/>
+  
+  <!-- Right Accent -->
+  <path d="M1200 300L1050 300L1200 150V300Z" fill="url(#support_grad)" fill-opacity="0.1"/>
+
+  <!-- Main CTA Text -->
+  <g filter="url(#neon)">
+    <text x="50%" y="140" text-anchor="middle" fill="white" font-family="Segoe UI, Arial, sans-serif" font-weight="900" font-size="72" letter-spacing="8">NEED ASSISTANCE?</text>
+  </g>
+  
+  <text x="50%" y="180" text-anchor="middle" fill="url(#support_grad)" font-family="Arial" font-weight="bold" font-size="20" letter-spacing="4">OUR COMMUNITY IS READY TO HELP</text>
+
+  <!-- Action Button -->
+  <g filter="url(#neon)">
+    <rect x="500" y="215" width="200" height="50" rx="25" fill="url(#support_grad)"/>
+    <text x="600" y="247" text-anchor="middle" fill="black" font-family="Arial" font-weight="900" font-size="22">HOP IN!!</text>
+  </g>
+
+</svg>

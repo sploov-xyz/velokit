@@ -1,0 +1,37 @@
+{
+  "name": "velokit",
+  "version": "1.0.0",
+  "description": "A high-velocity Discord bot scaffolding engine designed for modularity and production-ready architecture.",
+  "main": "dist/core/index.js",
+  "bin": {
+    "velokit": "dist/core/index.js"
+  },
+  "scripts": {
+    "build": "node scripts/build.js",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^14.0.2",
+    "execa": "^5.1.1",
+    "fs-extra": "^11.3.3",
+    "gradient-string": "^3.0.0",
+    "inquirer": "^8.2.5",
+    "kolorist": "^1.8.0",
+    "ora": "^9.0.0",
+    "tinygradient": "^2.0.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/gradient-string": "^1.1.6",
+    "@types/inquirer": "^8.2.5",
+    "@types/node": "^25.0.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

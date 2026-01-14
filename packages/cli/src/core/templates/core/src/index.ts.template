@@ -1,0 +1,35 @@
+import { Client, GatewayIntentBits, Collection } from 'discord.js';
+import { config } from 'dotenv';
+import { loadEvents } from './handlers/eventHandler';
+import { loadCommands } from './handlers/commandHandler';
+import { Logger } from './utils/logger';
+
+config();
+
+export class SploovClient extends Client {
+    public commands: Collection<string, any> = new Collection();
+    public config: any = process.env;
+
+    constructor() {
+        super({
+            intents: [
+                GatewayIntentBits.Guilds,
+                GatewayIntentBits.GuildMessages,
+                GatewayIntentBits.MessageContent,
+                {{extraIntents}}
+            ]
+        });
+    }
+
+    public async start() {
+        Logger.sploov('Starting VeloKit Bot Architecture...');
+        
+        await loadEvents(this);
+        await loadCommands(this);
+
+        await this.login(process.env.DISCORD_TOKEN);
+    }
+}
+
+const client = new SploovClient();
+client.start();

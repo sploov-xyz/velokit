@@ -1,0 +1,48 @@
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Premium Gradient -->
+    <linearGradient id="main_grad" x1="50" y1="50" x2="450" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00FFFF"/>
+      <stop offset="0.5" stop-color="#8000FF"/>
+      <stop offset="1" stop-color="#FF00FF"/>
+    </linearGradient>
+    
+    <!-- Outer Glow -->
+    <filter id="neon_glow" x="0" y="0" width="500" height="500" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <!-- Glassmorphism Effect -->
+    <linearGradient id="glass_grad" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="white" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="white" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Hexagon Outer Frame (Neon) -->
+  <path d="M250 40L433.013 145.718V357.147L250 462.865L66.9873 357.147V145.718L250 40Z" 
+        stroke="url(#main_grad)" stroke-width="4" stroke-dasharray="10 5" opacity="0.3"/>
+  
+  <!-- Main Hexagon (Glass Surface) -->
+  <path d="M250 60L414.545 155V345L250 440L85.4552 345V155L250 60Z" 
+        fill="url(#glass_grad)" stroke="url(#main_grad)" stroke-width="12" stroke-linejoin="round" filter="url(#neon_glow)"/>
+
+  <!-- The Velocity V-Bolt -->
+  <path d="M160 170 L250 380 L280 260 L340 140" 
+        stroke="white" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+    <animate attributeName="stroke-dasharray" from="0, 1000" to="1000, 0" dur="2s" fill="freeze" />
+  </path>
+  
+  <path d="M160 170 L250 380 L280 260 L340 140" 
+        stroke="url(#main_grad)" stroke-width="35" stroke-linecap="round" stroke-linejoin="round" opacity="0.6" filter="url(#neon_glow)"/>
+
+  <!-- Speed Lines -->
+  <line x1="120" y1="200" x2="80" y2="200" stroke="#00FFFF" stroke-width="8" stroke-linecap="round" opacity="0.5" />
+  <line x1="130" y1="240" x2="100" y2="240" stroke="#00FFFF" stroke-width="8" stroke-linecap="round" opacity="0.3" />
+  <line x1="380" y1="260" x2="420" y2="260" stroke="#FF00FF" stroke-width="8" stroke-linecap="round" opacity="0.5" />
+
+  <!-- Typography Background -->
+  <rect x="150" y="390" width="200" height="40" rx="20" fill="black" opacity="0.4"/>
+  <text x="50%" y="420" text-anchor="middle" fill="white" font-family="Segoe UI, Arial, sans-serif" font-weight="900" font-size="28" letter-spacing="4">VELOKIT</text>
+</svg>

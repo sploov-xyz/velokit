@@ -1,0 +1,39 @@
+# {{projectName}}
+
+A high-performance Discord bot forged with **VeloKit**.
+
+## 🚀 Quick Start
+
+1. **Configure Environment:**
+   Edit the `.env` file and add your `DISCORD_TOKEN` and other required API keys.
+
+2. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start in Development:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for Production:**
+   ```bash
+   npm run build
+   npm start
+   ```
+
+## 🛠 Architecture
+- **Framework:** Discord.js v14
+- **Engine:** VeloKit Core (by Sploov)
+- **Primary Soul:** {{soul}}
+- **Database:** {{db}}
+
+## 📁 Project Structure
+- `src/index.ts`: Entry point & Client initialization.
+- `src/commands/`: Command files (Slash/Prefix).
+- `src/events/`: Discord event listeners.
+- `src/utils/`: Utility functions & Logger.
+
+---
+*Forged with Velocity by Sploov*
