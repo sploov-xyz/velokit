@@ -22,10 +22,13 @@ jobs:
       - name: Build
         run: pnpm --filter docs build
 
+      - name: List files (Debug)
+        run: ls -R apps/docs/dist
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: apps/docs/docs/.vitepress/dist
+          path: apps/docs/dist
 
   deploy-pages:
     needs: deploy
