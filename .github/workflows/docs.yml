@@ -23,7 +23,7 @@ jobs:
         run: pnpm --filter docs build
 
       - name: List files (Debug)
-        run: ls -R apps/docs/dist
+        run: ls -R apps/docs
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

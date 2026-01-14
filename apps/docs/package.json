@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "vitepress dev docs",
-    "build": "vitepress build docs --outDir dist",
+    "build": "vitepress build docs --outDir ../dist",
     "preview": "vitepress preview docs"
   },
   "keywords": [],
