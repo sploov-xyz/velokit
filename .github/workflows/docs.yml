@@ -21,17 +21,12 @@ jobs:
 
       - name: Build
         run: |
-          cd apps/docs
-          pnpm run build -- --outDir dist
-
-      - name: Locate Build Output (Debug)
-        run: |
-          find . -name "index.html"
+          pnpm --filter docs build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: apps/docs/dist
+          path: apps/docs/docs/.vitepress/dist
 
   deploy-pages:
     needs: deploy

@@ -1,19 +1,16 @@
 {
   "name": "docs",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "VeloKit Documentation",
+  "type": "module",
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
     "preview": "vitepress preview docs"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module",
-  "scripts": {
-    "vitepress": "^1.6.4",
-    "vue": "^3.5.26"
-  }
+  "dependencies": {
+    "vitepress": "^1.6.3",
+    "vue": "^3.4.0"
+  },
+  "license": "ISC"
 }
