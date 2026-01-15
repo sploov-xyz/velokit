@@ -88,6 +88,117 @@ npx @sploov/velokit --save-config ./bot-config.json
 
 This creates a reusable configuration file based on your selections during the build process.
 
+### `--no-git`
+Skip automatic git initialization. By default, VeloKit initializes a git repository.
+
+```bash
+npx @sploov/velokit --no-git
+```
+
+### `--no-install`
+Skip automatic dependency installation. You'll need to run `npm install` manually.
+
+```bash
+npx @sploov/velokit --no-install
+```
+
+---
+
+## Commands (v1.0.3+)
+
+### `migrate [project-dir]`
+Migrate an existing VeloKit project to the latest version.
+
+```bash
+npx @sploov/velokit migrate
+npx @sploov/velokit migrate ./my-bot
+```
+
+**Features:**
+- Automatic version detection
+- Safe backups before migration
+- Sequential migration paths
+- Configuration updates
+
+### `health [project-dir]`
+Run a comprehensive health check on your VeloKit project.
+
+```bash
+npx @sploov/velokit health
+npx @sploov/velokit health ./my-bot
+```
+
+**Analyzes:**
+- File count and lines of code
+- Command and event count
+- Dependency statistics
+- Project configuration
+- Common issues
+- Health score (0-100)
+
+### `plugin <action> [name]`
+Manage VeloKit plugins.
+
+**List installed plugins:**
+```bash
+npx @sploov/velokit plugin list
+```
+
+**Create a new plugin:**
+```bash
+npx @sploov/velokit plugin create my-custom-plugin
+```
+
+Creates a plugin scaffold in `.velokit/plugins/my-custom-plugin/`.
+
+**Plugin Structure:**
+```
+.velokit/plugins/my-plugin/
+├── index.js           # Plugin entry point
+├── package.json       # Plugin metadata
+└── README.md          # Plugin documentation
+```
+
+### `init-git [project-dir]`
+Initialize a git repository in an existing project.
+
+```bash
+npx @sploov/velokit init-git
+npx @sploov/velokit init-git ./my-project
+```
+
+**Options:**
+- `-r, --remote <url>` - Set git remote URL
+- `-b, --branch <name>` - Set default branch name (default: `main`)
+
+**Example with options:**
+```bash
+npx @sploov/velokit init-git -r https://github.com/user/repo.git -b main
+```
+
+### `add-tests [project-dir]`
+Add a testing framework to an existing project.
+
+```bash
+npx @sploov/velokit add-tests
+npx @sploov/velokit add-tests ./my-project
+```
+
+**Options:**
+- `-f, --framework <framework>` - Testing framework: `jest` or `vitest` (default: `jest`)
+- `-l, --language <language>` - Language: `ts` or `js` (default: `ts`)
+
+**Example:**
+```bash
+npx @sploov/velokit add-tests -f vitest -l ts
+```
+
+**What it does:**
+- Installs testing framework configuration
+- Creates sample test files
+- Updates package.json with test scripts
+- Sets up TypeScript/JavaScript support
+
 ---
 
 ## Configuration File Schema

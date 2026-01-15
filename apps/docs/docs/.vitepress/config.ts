@@ -27,6 +27,7 @@ export default defineConfig({
         items: [
           { text: 'Command Reference', link: '/guide/cli-reference' },
           { text: 'Advanced Configuration', link: '/guide/advanced-config' },
+          { text: 'Plugin Development', link: '/guide/plugins' },
           { text: 'Troubleshooting', link: '/guide/troubleshooting' }
         ]
       },

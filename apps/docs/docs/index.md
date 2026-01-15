@@ -18,11 +18,17 @@ hero:
 
 features:
   - title: ⚡ High Velocity
-    details: Build a complete architecture in seconds using our 7-Phase interactive CLI.
-  - title: 🧩 Modular Souls
-    details: Inject Music, AI, or Moderation modules dynamically without touching boilerplate.
+    details: Build a complete architecture in seconds using our interactive CLI with smart defaults.
+  - title: 🧩 Modular & Extensible
+    details: Plugin system, custom modules, and dynamic feature injection. Extend VeloKit your way.
   - title: 🛡️ Production Grade
-    details: Built-in validation, premium logging, and Docker support for enterprise-level stability.
+    details: Built-in testing, CI/CD templates, Git integration, and health checks for enterprise stability.
+  - title: 🔌 Plugin System
+    details: Create custom plugins with hooks into the build process. Add your own templates and modules.
+  - title: 🧪 Testing Ready
+    details: Jest and Vitest support out of the box. Start testing immediately with pre-configured setups.
+  - title: 🚀 CI/CD Templates
+    details: GitHub Actions and GitLab CI templates included. Deploy with confidence from day one.
 ---
 
 <div align="center">

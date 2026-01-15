@@ -17,7 +17,7 @@ VeloKit is designed to be run without installation. Simply use `npx` to start th
 npx @sploov/velokit
 ```
 
-### Quick Start Options (v1.0.2+)
+### Quick Start Options
 
 **Standard Mode (Interactive):**
 ```bash
@@ -42,6 +42,16 @@ npx @sploov/velokit --dry-run
 **Save Configuration:**
 ```bash
 npx @sploov/velokit --save-config my-setup.json
+```
+
+**Skip Git Initialization:**
+```bash
+npx @sploov/velokit --no-git
+```
+
+**Skip Dependency Installation:**
+```bash
+npx @sploov/velokit --no-install
 ```
 
 ## First Steps after Building
@@ -75,6 +85,36 @@ Your VeloKit project follows a modular, scalable architecture. For Discord bots:
 - `/src/config.ts`: Automated environment validation.
 - `README.md`: Auto-generated documentation (v1.0.2+)
 - `.gitignore`: Smart ignore rules (v1.0.2+)
+
+## Additional Commands (v1.0.3+)
+
+VeloKit now includes powerful commands for managing existing projects:
+
+**Health Check:**
+```bash
+npx @sploov/velokit health
+```
+
+**Migrate Project:**
+```bash
+npx @sploov/velokit migrate
+```
+
+**Initialize Git:**
+```bash
+npx @sploov/velokit init-git
+```
+
+**Add Testing Framework:**
+```bash
+npx @sploov/velokit add-tests
+```
+
+**Manage Plugins:**
+```bash
+npx @sploov/velokit plugin list
+npx @sploov/velokit plugin create my-plugin
+```
 
 ## What's Next?
 
