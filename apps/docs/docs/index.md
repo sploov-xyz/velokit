@@ -36,18 +36,18 @@ features:
 :root.dark .light-only { display: none; }
 
 :root {
-  --vp-c-brand: #008B8B;
-  --vp-c-brand-light: #6600CC;
-  --vp-c-brand-lighter: #8B008B;
+  --vp-c-brand: #1a2980;
+  --vp-c-brand-light: #26d0ce;
+  --vp-c-brand-lighter: #26d0ce;
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: linear-gradient(135deg, #008B8B 0%, #8B008B 100%);
+  --vp-home-hero-name-background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);
 }
 
 :root.dark {
-  --vp-c-brand: #00FFFF;
-  --vp-c-brand-light: #8000FF;
-  --vp-c-brand-lighter: #FF00FF;
-  --vp-home-hero-name-background: linear-gradient(135deg, #00FFFF 0%, #FF00FF 100%);
-  --vp-home-hero-image-filter: drop-shadow(0 0 40px rgba(0, 255, 255, 0.2));
+  --vp-c-brand: #26d0ce;
+  --vp-c-brand-light: #1a2980;
+  --vp-c-brand-lighter: #1a2980;
+  --vp-home-hero-name-background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);
+  --vp-home-hero-image-filter: drop-shadow(0 0 40px rgba(38, 208, 206, 0.2));
 }
 </style>

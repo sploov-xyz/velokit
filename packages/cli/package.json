@@ -1,6 +1,6 @@
 {
   "name": "@sploov/velokit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A high-velocity Discord bot scaffolding engine designed for modularity and production-ready architecture.",
   "main": "dist/core/index.js",
   "bin": {
@@ -11,7 +11,7 @@
   },
   "scripts": {
     "build": "node scripts/build.js",
-    "start": "node dist/index.js",
+    "start": "node dist/core/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

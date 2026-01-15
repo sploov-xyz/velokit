@@ -2,9 +2,8 @@
   <defs>
     <!-- Solid Professional Gradient for Light Mode -->
     <linearGradient id="main_grad" x1="50" y1="50" x2="450" y2="450" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#00AAAA"/>
-      <stop offset="0.5" stop-color="#6600CC"/>
-      <stop offset="1" stop-color="#CC00CC"/>
+      <stop stop-color="#1a2980"/>
+      <stop offset="1" stop-color="#26d0ce"/>
     </linearGradient>
     
     <!-- Subtle Shadow for Light Mode -->

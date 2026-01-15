@@ -23,6 +23,6 @@ export class Logger {
     }
 
     static sploov(message: string) {
-        console.log(`${this.timestamp()} ${chalk.cyan.bold('⚡')} ${chalk.cyan(message)}`);
+        console.log(`${this.timestamp()} ${chalk.hex('#26d0ce').bold('⚡')} ${chalk.hex('#26d0ce')(message)}`);
     }
 }

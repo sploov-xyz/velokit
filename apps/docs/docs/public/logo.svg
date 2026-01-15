@@ -2,9 +2,8 @@
   <defs>
     <!-- Premium Gradient -->
     <linearGradient id="main_grad" x1="50" y1="50" x2="450" y2="450" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#00FFFF"/>
-      <stop offset="0.5" stop-color="#8000FF"/>
-      <stop offset="1" stop-color="#FF00FF"/>
+      <stop stop-color="#1a2980"/>
+      <stop offset="1" stop-color="#26d0ce"/>
     </linearGradient>
     
     <!-- Outer Glow -->
@@ -38,9 +37,9 @@
         stroke="url(#main_grad)" stroke-width="35" stroke-linecap="round" stroke-linejoin="round" opacity="0.6" filter="url(#neon_glow)"/>
 
   <!-- Speed Lines -->
-  <line x1="120" y1="200" x2="80" y2="200" stroke="#00FFFF" stroke-width="8" stroke-linecap="round" opacity="0.5" />
-  <line x1="130" y1="240" x2="100" y2="240" stroke="#00FFFF" stroke-width="8" stroke-linecap="round" opacity="0.3" />
-  <line x1="380" y1="260" x2="420" y2="260" stroke="#FF00FF" stroke-width="8" stroke-linecap="round" opacity="0.5" />
+  <line x1="120" y1="200" x2="80" y2="200" stroke="#1a2980" stroke-width="8" stroke-linecap="round" opacity="0.5" />
+  <line x1="130" y1="240" x2="100" y2="240" stroke="#1a2980" stroke-width="8" stroke-linecap="round" opacity="0.3" />
+  <line x1="380" y1="260" x2="420" y2="260" stroke="#26d0ce" stroke-width="8" stroke-linecap="round" opacity="0.5" />
 
   <!-- Typography Background -->
   <rect x="150" y="390" width="200" height="40" rx="20" fill="black" opacity="0.4"/>

@@ -3,9 +3,8 @@
   
   <defs>
     <linearGradient id="velograd" x1="0" y1="0" x2="1200" y2="400" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#008B8B"/>
-      <stop offset="0.5" stop-color="#6600CC"/>
-      <stop offset="1" stop-color="#8B008B"/>
+      <stop stop-color="#1a2980"/>
+      <stop offset="1" stop-color="#26d0ce"/>
     </linearGradient>
     
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">

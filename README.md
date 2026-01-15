@@ -5,10 +5,10 @@
 <br />
 
 # VeloKit
-**High-Velocity Discord Bot Engine**
+**High-Velocity Project Scaffolder**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-00FFFF.svg)](LICENSE)
-[![TypeScript](https://img.shields.io/badge/Language-TypeScript-FF00FF.svg)](https://www.typescriptlang.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-1a2980.svg)](LICENSE)
+[![npm version](https://img.shields.io/npm/v/@sploov/velokit?color=26d0ce)](https://www.npmjs.com/package/@sploov/velokit)
 
 [Report Bug](https://github.com/sploov-xyz/velokit/issues) · [Request Feature](https://github.com/sploov-xyz/velokit/issues) · [Documentation](https://velokit.sploov.xyz)
 
@@ -17,25 +17,30 @@
 ---
 
 ### **Introduction**
-VeloKit is a modular CLI designed for developers who value speed and clean architecture. It scaffolds a production-ready Discord bot in seconds, handling handlers, intents, and environment management automatically.
+VeloKit is a modular CLI designed for developers who value speed and clean architecture. It scaffolds production-ready applications in seconds, handling architecture, intents, and environment management automatically.
 
-### **The Forge Process**
-VeloKit guides you through a refined construction process to tailor your bot:
-- **Identity:** Set your project name and credentials.
-- **Core Architecture:** Choose a soul (Music, AI, Mod, etc.).
+### **What's New in v1.0.1**
+- **Dual-Language:** Now supports both **TypeScript** and **JavaScript (ESM)**.
+- **Express Support:** Scaffold high-performance REST APIs alongside Discord bots.
+- **Enhanced TUI:** A redesigned interactive build experience.
+
+### **The Build Process**
+VeloKit guides you through a refined construction process to tailor your project:
+- **Identity:** Set your project type, name, and language.
+- **Soul Selection:** (Discord) Choose a focus (Music, AI, Mod, etc.).
 - **Engine Deep-Dive:** Configure specialized nodes (Lavalink, Gemini).
 - **Extra Injections:** Layer on additional feature sets.
 - **Infrastructure:** Automate DB and Docker setup.
 
 ### **Usage**
-Forge your next bot with a single command:
+Build your next project with a single command:
 ```bash
-npx velokit
+npx @sploov/velokit
 ```
 
 ### **Tech Stack**
-- **Core:** Discord.js v14
-- **Language:** TypeScript
+- **Core:** Discord.js v14 / Express.js
+- **Languages:** TypeScript / JavaScript (ESM)
 - **Logger:** Sploov Premium Logger
 - **Architecture:** Modular Handler System
 
