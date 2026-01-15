@@ -1,6 +1,6 @@
 {
   "name": "@sploov/velokit",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A high-velocity Discord bot scaffolding engine designed for modularity and production-ready architecture.",
   "main": "dist/core/index.js",
   "bin": {

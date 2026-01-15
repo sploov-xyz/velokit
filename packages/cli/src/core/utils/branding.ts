@@ -29,8 +29,9 @@ export function printBanner(version?: string) {
     console.log(chalk.gray('\u2500'.repeat(width)) + '\n');
 }
 
-export function printSection(title: string) {
-    console.log(`\n${primaryColor('▐')} ${chalk.bold.white(title.toUpperCase())}`);
+export function printSection(title: string, step?: string) {
+    const displayTitle = step ? `${step} • ${title}` : title;
+    console.log(`\n${primaryColor('▐')} ${chalk.bold.white(displayTitle.toUpperCase())}`);
     console.log(chalk.gray('  ' + '\u2500'.repeat(30)));
 }
 
@@ -68,4 +69,64 @@ export async function typewriter(text: string, speed = 25) {
         await new Promise(resolve => setTimeout(resolve, speed));
     }
     process.stdout.write('\n');
+}
+
+export function printWarning(message: string) {
+    console.log('');
+    console.log(chalk.hex('#f59e0b')('  ⚠ ') + chalk.bold.hex('#f59e0b')('WARNING'));
+    console.log(chalk.gray('  ' + '\u2500'.repeat(30)));
+    console.log(`  ${chalk.hex('#f59e0b')(message)}`);
+    console.log('');
+}
+
+export function printInfo(message: string) {
+    console.log('');
+    console.log(chalk.hex('#3b82f6')('  ℹ ') + chalk.bold.hex('#3b82f6')('INFO'));
+    console.log(chalk.gray('  ' + '\u2500'.repeat(30)));
+    console.log(`  ${chalk.hex('#3b82f6')(message)}`);
+    console.log('');
+}
+
+export function printError(message: string) {
+    console.log('');
+    console.log(chalk.hex('#ef4444')('  ✖ ') + chalk.bold.hex('#ef4444')('ERROR'));
+    console.log(chalk.gray('  ' + '\u2500'.repeat(30)));
+    console.log(`  ${chalk.hex('#ef4444')(message)}`);
+    console.log('');
+}
+
+export function printList(items: string[], title?: string) {
+    if (title) {
+        console.log('\n' + primaryColor('  ► ') + chalk.bold.white(title));
+    }
+    items.forEach((item) => {
+        console.log(chalk.gray('    • ') + chalk.white(item));
+    });
+    console.log();
+}
+
+export function printTree(obj: any, indent: string = '  ') {
+    Object.entries(obj).forEach(([key, value], index, arr) => {
+        const isLast = index === arr.length - 1;
+        const prefix = isLast ? '└─ ' : '├─ ';
+        const connector = isLast ? '   ' : '│  ';
+        
+        if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
+            console.log(chalk.gray(indent + prefix) + primaryColor(key));
+            printTree(value, indent + connector);
+        } else if (Array.isArray(value)) {
+            console.log(chalk.gray(indent + prefix) + primaryColor(key) + chalk.gray(': ') + chalk.white(value.join(', ')));
+        } else {
+            console.log(chalk.gray(indent + prefix) + primaryColor(key) + chalk.gray(': ') + chalk.white(value));
+        }
+    });
+}
+
+export function printProgressBar(current: number, total: number, width: number = 30) {
+    const percentage = Math.round((current / total) * 100);
+    const filled = Math.round((width * current) / total);
+    const empty = width - filled;
+    
+    const bar = primaryColor('█'.repeat(filled)) + chalk.gray('░'.repeat(empty));
+    console.log(`\n  ${bar} ${chalk.bold.white(`${percentage}%`)} ${chalk.gray(`(${current}/${total})`)}`);
 }

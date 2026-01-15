@@ -19,10 +19,15 @@
 ### **Introduction**
 VeloKit is a modular CLI designed for developers who value speed and clean architecture. It scaffolds production-ready applications in seconds, handling architecture, intents, and environment management automatically.
 
-### **What's New in v1.0.1**
-- **Dual-Language:** Now supports both **TypeScript** and **JavaScript (ESM)**.
-- **Express Support:** Scaffold high-performance REST APIs alongside Discord bots.
-- **Enhanced TUI:** A redesigned interactive build experience.
+### **What's New in v1.0.3**
+- **Plugin System:** Extend VeloKit with custom plugins and modules
+- **Git Integration:** Automatic git initialization with .gitignore and .gitattributes
+- **Testing Framework Setup:** Built-in support for Jest and Vitest
+- **CI/CD Templates:** Ready-to-use GitHub Actions and GitLab CI configurations
+- **Migration System:** Upgrade existing projects to the latest version
+- **Project Analytics:** Health checks and project analytics
+- **Environment Manager:** Advanced .env file management and validation
+- **New CLI Commands:** `migrate`, `health`, `plugin`, `init-git`, `add-tests`
 
 ### **The Build Process**
 VeloKit guides you through a refined construction process to tailor your project:

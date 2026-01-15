@@ -23,6 +23,14 @@ export default defineConfig({
         ]
       },
       {
+        text: 'CLI Reference',
+        items: [
+          { text: 'Command Reference', link: '/guide/cli-reference' },
+          { text: 'Advanced Configuration', link: '/guide/advanced-config' },
+          { text: 'Troubleshooting', link: '/guide/troubleshooting' }
+        ]
+      },
+      {
         text: 'Modules',
         items: [
           { text: 'Music', link: '/guide/module-music' },

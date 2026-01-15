@@ -14,7 +14,34 @@ Before running the VeloKit builder, ensure you have the following installed:
 VeloKit is designed to be run without installation. Simply use `npx` to start the build engine:
 
 ```bash
-npx velokit
+npx @sploov/velokit
+```
+
+### Quick Start Options (v1.0.2+)
+
+**Standard Mode (Interactive):**
+```bash
+npx @sploov/velokit
+```
+
+**Quick Mode (Smart Defaults):**
+```bash
+npx @sploov/velokit --quick
+```
+
+**Using Configuration Files:**
+```bash
+npx @sploov/velokit --config my-bot-config.json
+```
+
+**Preview Mode (Dry Run):**
+```bash
+npx @sploov/velokit --dry-run
+```
+
+**Save Configuration:**
+```bash
+npx @sploov/velokit --save-config my-setup.json
 ```
 
 ## First Steps after Building
@@ -46,3 +73,14 @@ Your VeloKit project follows a modular, scalable architecture. For Discord bots:
 - `/src/events/`: Discord event listeners (ready, messageCreate, etc.).
 - `/src/utils/logger.ts`: The premium Sploov Logger utility.
 - `/src/config.ts`: Automated environment validation.
+- `README.md`: Auto-generated documentation (v1.0.2+)
+- `.gitignore`: Smart ignore rules (v1.0.2+)
+
+## What's Next?
+
+- Explore [The Build Process](/guide/the-build-process)
+- Learn about [CLI Reference](/guide/cli-reference)
+- Check out [Advanced Configuration](/guide/advanced-config)
+- Read about [Music Module](/guide/module-music)
+- Discover [AI Integration](/guide/module-ai)
+- Visit [Troubleshooting](/guide/troubleshooting) if you encounter issues
